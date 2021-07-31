@@ -8,7 +8,13 @@ class AskResult:
     YES = "yes"
     NO = "no"
 
-def ask(message, default_option = AskResult.YES) -> bool:
+class AskFlags:
+    # Symbolic constants for aks_lib, should not be modified
+    YES_TO_ALL = "yes_to_all"
+    NO_TO_ALL = "no_to_all"
+    DEFAULT_TO_ALL = "default_to_all"
+
+def ask(message, default_option = AskResult.YES, flag=None) -> bool:
     """Ask user's confirmation about an action.
 
     Args:
@@ -25,10 +31,33 @@ def ask(message, default_option = AskResult.YES) -> bool:
         ValueError: If the default option ins't AskResult.YES ("yes"), or AskResult.NO ("no").
     """
     _check_default_option(default_option)
+    _check_flag(flag)
+
+    if flag is not None:
+        return _process_flag(default_option,flag)
+
     ending = _message_ending(default_option)
     response = input(message + ending)
 
     return _process_response(response, default_option)
+
+def _check_flag(flag: str) -> None:
+    if flag not in [AskFlags.YES_TO_ALL, AskFlags.NO_TO_ALL, AskFlags.DEFAULT_TO_ALL, None]:  
+        raise ValueError(f"'{flag}' isn't a supported flag.")
+
+def _process_flag(default_option: str, flag: str):
+    if flag == AskFlags.YES_TO_ALL:
+        return True
+    elif flag == AskFlags.NO_TO_ALL:
+        return False
+    elif flag == AskFlags.DEFAULT_TO_ALL:
+        return _askresult_to_bool(default_option)
+
+def _askresult_to_bool(default_option):
+    if default_option == AskResult.YES:
+        return True
+    elif default_option == AskResult.NO:
+        return False
 
 def _check_default_option(default_option: str) -> None:
     """Check if default_option is a supported value for the ask() function.
