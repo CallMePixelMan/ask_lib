@@ -46,7 +46,7 @@ Le fichier vient d'être supprimé.
 - `ask_lib` est très simple d'implémentation et d'utilisation.
 
 ## Prérequis
-`ask_lib` est compatible avec les versions de Python 3 à partir de la version 3.6.
+`ask_lib` est compatible avec les versions de Python 3 à partir de la version 3.6
 
 ## Installation
 Vous pouvez installer `ask_lib` en utilisant pip, avec la commande suivante ; 
@@ -54,6 +54,7 @@ Vous pouvez installer `ask_lib` en utilisant pip, avec la commande suivante ;
 
 ## Documentation
 Vous pouvez consulter la documentation en cliquant [ICI](./docs/fr_documentation.md).
+Vous pouvez retrouver `asl_lib` sur PyPi en cliquant [ICI](https://pypi.org/project/ask-lib/).
 
 ## License
 `ask_lib` est disponible sous licence [MIT](./LICENCE).
