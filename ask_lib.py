@@ -56,7 +56,7 @@ def _askresult_to_bool(askresult):
     """Convert a AskResult constant to a boolean.
 
     Returns:
-        bool: True if askresult == AskResult.YES ("yes"), False if if askresult == AskResult.NO ("no").
+        bool: True if askresult == AskResult.YES ("yes"), False if askresult == AskResult.NO ("no").
 
     Note:
         You should not use this function, this is an implementation detail for the ask_lib module.
@@ -119,8 +119,7 @@ def _process_flag(default_option: str, flag: str):
     """Figures out selected flag, and assign a boolean representation of it.
 
     Args:
-        default_option (str): Must be "yes" or "no". Gives the function the wanted
-            default option if the user doesn't give a response / gives a unsupported response.
+        default_option (str): Must be "yes" or "no". Gives the function the wanted default option if flag is not None.
         flag (str): Must be "yes_to_all", "no_to_all" or "default_to_all". Gives the function the wanted flag.
 
     Note:
