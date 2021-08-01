@@ -24,6 +24,8 @@ def ask(message, default_option = AskResult.YES, flag=None) -> bool:
         flag (Union[str,None],optional): Must be AskFlag.YES_TO_ALL ("yes_to_all"), AskFlag.NO_TO_ALL ("no_to_all"), 
             AskFlag.DEFAULT_TO_ALL("default_to_all") or None.
             This is a flag who can be used in a CLI when the user want to pass the confirmation.
+            
+            IF THE FLAG IN NOT None, NO QUESTION WILL BE ASKED TO THE USER !
 
 
     Returns:
