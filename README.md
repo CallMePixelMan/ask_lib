@@ -54,7 +54,7 @@ Vous pouvez installer `ask_lib` en utilisant pip, avec la commande suivante ;
 
 ## Documentation
 Vous pouvez consulter la documentation en cliquant [ICI](./docs/fr_documentation.md).  
-Vous pouvez retrouver `asl_lib` sur PyPi en cliquant [ICI](https://pypi.org/project/ask-lib/).
+Vous pouvez retrouver `ask_lib` sur PyPi en cliquant [ICI](https://pypi.org/project/ask-lib/).
 
 ## Licence
 `ask_lib` est disponible sous licence [MIT](./LICENCE).
