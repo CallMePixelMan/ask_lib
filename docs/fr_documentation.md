@@ -45,7 +45,7 @@ Lève l'erreur
 
 ***
 
-## Classe
+## Classes
 ### AskResult
 La classe `AskResult` contient des constantes, celles-ci ne doivent pas être modifiées. Il s'agit d'une classe qui simplifie l'usage de la fonction `ask()`.
 
@@ -58,3 +58,15 @@ Attributs de classe
   - "yes"
 - NO (`str`)
   - "no"
+
+### AskFlag
+La classe `AskFlag` contient des constantes, celles-ci ne doivent pas être modifiées. Il s'agit d'une classe qui simplifie l'usage de la fonction `ask()`.
+
+Attributs de classe
+
+- YES_TO_ALL (`str`)
+  - "yes_to_all"
+- NO_TO_ALL (`str`)
+  - "no_to_all"
+- DEFAULT_TO_ALL (`str`)
+  - "default_to_all"
