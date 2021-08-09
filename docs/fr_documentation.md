@@ -71,7 +71,7 @@ Attributs de classe
 La classe `AskFlag` contient des constantes, celles-ci ne doivent pas être modifiées. Il s'agit d'une classe qui simplifie l'usage de la fonction `ask()`.
 
 ```
-class AskResult
+class AskFlag
 ```
 
 Attributs de classe
