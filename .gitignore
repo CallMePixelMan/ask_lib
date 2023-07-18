@@ -1,0 +1,6 @@
+**/*.
+!.gitignore
+!.readthedocs.yaml
+!.github
+
+__pycache__
