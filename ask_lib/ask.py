@@ -1,3 +1,5 @@
+from typing import Optional
+
 from .ask_result import AskResult
 from .ask_flag import AskFlag
 
@@ -5,7 +7,7 @@ from .ask_flag import AskFlag
 def ask(
     message,
     default_option=AskResult.YES,
-    flag: AskFlag | None = None,
+    flag: Optional[AskFlag] = None,
 ) -> bool:
     """Ask user's confirmation about an action.
 
