@@ -13,8 +13,10 @@ jobs:
         with:
           python-version: "3.8"
       
-      - name: Install poetry and dependencies
+      - name: Install poetry 
         uses: Gr1N/setup-poetry@v8 
+    
+      - name: Use poetry to install dependencies
         run: |
           poetry --version
           poetry install
