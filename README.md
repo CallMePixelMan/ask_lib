@@ -5,16 +5,32 @@
 ![](https://img.shields.io/pypi/l/ask_lib) 
 ![](https://img.shields.io/pypi/v/ask_lib) 
 ![](https://img.shields.io/pypi/pyversions/ask_lib)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Documentation Status](https://readthedocs.org/projects/ask-lib/badge/?version=latest)](https://ask-lib.readthedocs.io/en/latest/?badge=latest)
+[![CallMePixelMan's Workflow](https://github.com/CallMePixelMan/ask_lib/actions/workflows/callmepixelman-workflow.yaml/badge.svg)](https://github.com/CallMePixelMan/ask_lib/actions/workflows/callmepixelman-workflow.yaml)
 
 
 # ask_lib
 ask_lib is a small Python package available on PyPi that lets you ask user's confirmation from a [CLI](https://en.wikipedia.org/wiki/Command-line_interface).
+
+
+## Documentation
+You can take a look to [the documentation](https://ask-lib.readthedocs.io/en/latest/index.html), hosted by ReadTheDocs.
+
 
 ## Features
 - [x] Simple API.
 - [x] No dependencies.
 - [x] Well tested.
 - [x] Featuring CI.
+
+## Install
+```sh
+pip install ask_lib
+
+# Or, if you are using poetry
+poetry add ask_lib
+```
 
 ## Examples
 ```py
