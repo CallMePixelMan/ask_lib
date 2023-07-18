@@ -28,6 +28,6 @@ jobs:
         run: poetry run pytest .
       
       - name: Build documentation with Sphinx
-        uses: ammaraskar/sphinx-action@master
-        with:
-          docs-folder: "docs/"
+        run: |
+          cd docs
+          poetry run make html
