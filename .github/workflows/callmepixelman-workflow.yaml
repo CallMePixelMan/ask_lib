@@ -5,27 +5,21 @@ on: ["push", "pull_request"]
 jobs:
   first-job:
     runs-on: "ubuntu-latest"
-    
     steps:
       - uses: actions/checkout@v3
-      
       - name: Install Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.8"
-
       - name: Install poetry and dependencies
       - uses: Gr1N/setup-poetry@v8 
         run: |
           poetry --version
           poetry install
-
       - name: Lint with Ruff
       - run: poetry run ruff .
-
       - name: Test with PyTest
       - run: poetry run pytest .
-
       - name: Build documentation with Sphinx
       - uses: ammaraskar/sphinx-action@master
         with:
